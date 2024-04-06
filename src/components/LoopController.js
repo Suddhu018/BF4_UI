@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 const LoopController = () => {
   const [data, setdataarrived] = useState({});
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("https://bf-4-backend.vercel.app/")
       .then(function (response) {
         if (response.status === 200) {
           response.json().then(function (data) {
